@@ -4,7 +4,7 @@ use daft_core::array::ops::{DaftCompare, DaftLogical};
 use daft_dsl::{ExprRef, Literal};
 use daft_table::Table;
 
-#[derive(Debug, Clone, serde::Serialize, serde::Deserialize)]
+# [derive(Debug, Clone, serde::Serialize, serde::Deserialize)]
 pub struct PartitionSpec {
     pub keys: Table,
 }
@@ -63,7 +63,6 @@ impl PartialEq for PartitionSpec {
                 }
             }
         }
-
         true
     }
 }
